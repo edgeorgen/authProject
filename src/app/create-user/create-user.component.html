@@ -1,0 +1,21 @@
+<p>create-user works!</p>
+
+<div class= "authClass">
+    <h4>Register</h4>
+    <div class = "formGroup">
+        <input type="text" class="formControl" placeholder="Username" #email required>
+    </div>
+    <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Password" #password required>
+    </div>
+    <div>
+         <input type="button" class="btn" value="Register" (click)="service.createUser(email.value, password.value)">
+    </div>
+</div>
+    
+<div class= authClass>
+    <button class="btn" (click)= "goToSignIn()">Have an Account? Sign In.</button >
+
+</div>
+
+

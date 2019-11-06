@@ -1,0 +1,17 @@
+<p>sign-in works!</p>
+<div class= "authClass">
+    <h4>Sign In</h4>
+    <div class = "formGroup">
+        <input type="text" class="formControl" placeholder="Username" #email required>
+    </div>
+    <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Password" #password required>
+    </div>
+    <div>
+        <input type="button" class="btn" value="Sign In" (click)='signInService.signIn(email.value,password.value)'>
+    </div>
+</div>
+
+<div>
+    <button class="btn" (click)= "goToCreateUser()">Need an Account? Create User.</button >
+</div>
